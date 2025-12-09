@@ -1,8 +1,32 @@
+import { NavLink } from "react-router-dom";
+
 export default function AppHeader() {
+    const navLinks = [
+        {
+            title: "Home",
+            path: "/",
+        },
+        {
+            title: "Chi siamo",
+            path: "/chi-siamo",
+        },
+        {
+            title: "Prodotti",
+            path: "/prodotti",
+        },
+    ];
+
 
     return (
-        <header className="flex-center">
-            <h1>This is my header</h1>
+        <header>
+            <ul>
+                {navLinks.map((link, index) => (
+                    <li key={index}>
+                        <NavLink to={link.path}>{link.title}</NavLink>
+                    </li>
+                ))}
+            </ul>
+        
         </header>
     );
 }
