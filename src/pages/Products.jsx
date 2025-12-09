@@ -24,7 +24,7 @@ export default function Products() {
             <main>
                 <div className="container">
                     <div className="text-center mb-20">
-                        <h1>Product list</h1>
+                        <h1>See our products:</h1>
                     </div>
 
                     <div className="container flex wrap">
