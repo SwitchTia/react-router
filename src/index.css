@@ -12,6 +12,7 @@ header {
   height: 80px;
   background-color:rgb(206, 196, 245);
   text-transform:uppercase;
+  padding: 30px;
 }
 
 main {

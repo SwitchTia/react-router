@@ -7,19 +7,19 @@ export default function AppHeader() {
             path: "/",
         },
         {
-            title: "Chi siamo",
-            path: "/chi-siamo",
+            title: "About us",
+            path: "/about-us",
         },
         {
-            title: "Prodotti",
-            path: "/prodotti",
+            title: "Products",
+            path: "/products",
         },
     ];
 
 
     return (
         <header>
-            <ul>
+            <ul className="flex-between">
                 {navLinks.map((link, index) => (
                     <li key={index}>
                         <NavLink to={link.path}>{link.title}</NavLink>
