@@ -1,4 +1,4 @@
-export default function ProductCard({id, title, price, image}) {
+export default function ProductCard({ title, price, image}) {
 
     return (
 
@@ -8,7 +8,7 @@ export default function ProductCard({id, title, price, image}) {
             <img className="card-img" src={image} alt={title} />
 
             <div className="flex-center gap mb-20">
-                {price}
+                <span>{price}</span>
             </div>
            
         </div>
