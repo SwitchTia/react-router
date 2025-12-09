@@ -1,20 +1,39 @@
 
 
 export default function Home() {
-  return (
-    <>
-      <section>
-        <h1>Home</h1>
-      </section>
+    return (
+        <>
+            <div className="container">
+                <div className="text-center py-40">
+                    <h1>Welcome to ShopWithUs</h1>
+                    <hr />
+                </div>
 
-      <section>
-        <h2>Contact us</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur
-          autem velit quidem officiis eos eius obcaecati quia omnis.
-        </p>
-      
-      </section>
-    </>
-  );
+                <div>
+                    <h3 className="py-40">
+                        Welcome to ShopWithUs, your trusted online destination for quality products and a seamless shopping experience.
+                        Founded with a simple mission — to make online shopping easier, faster, and more enjoyable — NovaCart brings together a curated selection of items from trusted brands and emerging creators around the world.
+                    </h3>
+                </div>
+
+
+
+                <div className="py-40">
+                    <h4>What We Offer:</h4>
+                    <hr />
+                    <p className="py-20">At ShopWithUS, we handpick every item to ensure our customers get a curated selection of:</p>
+                    <div className="py-20">
+                        <ul>
+                            <li>Fashion & Apparel: Trendy clothing, accessories, and seasonal collections</li>
+                            <li>Electronics & Gadgets: Smart devices, accessories, and everyday tech</li>
+                            <li>Home & Lifestyle: Decor, organization, kitchenware, and comfort essentials</li>
+                            <li>Beauty & Wellness: Skincare, grooming, and personal-care favorites</li>
+                            <li>Special Deals: Weekly promotions, bundle offers, and exclusive discounts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div >
+
+        </>
+    );
 }
