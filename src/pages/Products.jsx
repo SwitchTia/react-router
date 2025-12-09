@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ProductCard from "./ProductCard";
+import ProductCard from "../components/ProductCard";
 
 
 export default function Products() {
@@ -39,18 +39,6 @@ export default function Products() {
                                 biography={actress.biography}
                                 most_famous_movies={actress.most_famous_movies.join(", ")}
                                 awards={actress.awards}
-                                />
-                            </div>
-                        ))}
-
-                        {actorsList.map((product) => (
-                            <div className="col card" key={product.id}>
-                                
-                                <Card 
-                                id={product.id} 
-                                title={product.title} 
-                                image={product.image}
-                                price={product.price}
                                 />
                             </div>
                         ))}
