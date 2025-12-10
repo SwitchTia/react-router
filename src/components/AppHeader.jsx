@@ -19,9 +19,9 @@ export default function AppHeader() {
 
     return (
         <header>
-            <ul className="flex-between">
+            <ul className="flex-center">
                 {navLinks.map((link, index) => (
-                    <li key={index}>
+                    <li className="gap" key={index}>
                         <NavLink to={link.path}>{link.title}</NavLink>
                     </li>
                 ))}
