@@ -1,4 +1,4 @@
-
+import Logo from "../assets/img/Logo.png"
 
 export default function Home() {
     return (
@@ -9,17 +9,21 @@ export default function Home() {
                     <hr />
                 </div>
 
-                <div>
-                    <h3 className="py-40">
-                        Welcome to ShopWithUs, your trusted online destination for quality products and a seamless shopping experience.
-                        Founded with a simple mission — to make online shopping easier, faster, and more enjoyable — ShopWithUs brings together a curated selection of items from trusted brands and emerging creators around the world.
-                    </h3>
-                </div>
+                <section className="flex">
+                    <div>
+                        <h2 className="py-40">
+                            Your trusted online destination for quality products and a seamless shopping experience.
+                            Founded with a simple mission — to make online shopping easier, faster, and more enjoyable — ShopWithUs brings together a curated selection of items from trusted brands and emerging creators around the world.
+                        </h2>
+                    </div>
 
+                    <div>
+                        <img className="home-img" src={Logo} alt="logo" />
+                    </div>
 
-
+                </section>
                 <div className="py-40">
-                    <h4>What We Offer:</h4>
+                    <h4 className="py-20">What We Offer:</h4>
                     <hr />
                     <p className="py-20">At ShopWithUS, we handpick every item to ensure our customers get a curated selection of:</p>
                     <div className="py-20">

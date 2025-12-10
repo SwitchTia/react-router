@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import Logo from "../assets/img/Logo.png"
+
 
 export default function AppHeader() {
     const navLinks = [
@@ -18,7 +20,10 @@ export default function AppHeader() {
 
 
     return (
-        <header>
+        <header className="flex gap">
+            <div>
+                <img className="logo-img" src={Logo} alt="logo" />
+            </div>
             <ul className="flex-center">
                 {navLinks.map((link, index) => (
                     <li className="gap" key={index}>
