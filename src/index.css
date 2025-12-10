@@ -114,6 +114,15 @@ header li {
   max-width: 300px;
 }
 
+.btn {
+  background-color:rgb(86, 105, 181);
+  border:rgb(32, 123, 243);
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
 /* responsive mobile first */
 /* tablet */
 @media (min-width: 768px) {

@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import GoBack from "../components/GoBack";
 
 export default function SingleProduct() {
     const { id } = useParams();
@@ -34,6 +35,11 @@ export default function SingleProduct() {
                         <p className="py-10">Description: {product.description}</p>
 
                         <span>Price: {product.price}</span>
+
+                        <div className="py-40">
+                            <GoBack />
+                        </div>
+
                     </div>
 
                     <div>
@@ -41,6 +47,8 @@ export default function SingleProduct() {
                     </div>
 
                 </div>
+
+
             )}
         </>
     );
