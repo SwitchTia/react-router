@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
+import { Link } from "react-router-dom";
 
 
 export default function Products() {
@@ -28,12 +29,17 @@ export default function Products() {
                 <div className="container flex wrap">
                     {productsList.map((product) => (
                         <div className="col card" key={product.id}>
+                            <div>
+                                <Link to={`/products/${product.id}`}>
+                                    <ProductCard
+                                        title={product.title}
+                                        image={product.image}
+                                        price={product.price}
+                                    />
 
-                            <ProductCard
-                                title={product.title}
-                                image={product.image}
-                                price={product.price}
-                            />
+                                </Link>
+                            </div>
+
                         </div>
                     ))}
                 </div>
@@ -41,3 +47,10 @@ export default function Products() {
         </>
     )
 }
+
+
+{/* <ProductCard
+                                title={product.title}
+                                image={product.image}
+                                price={product.price}
+                            /> */}
