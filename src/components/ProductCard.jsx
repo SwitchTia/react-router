@@ -9,7 +9,6 @@ export default function ProductCard({ title, price, image }) {
 
             <span>Price: {price}</span>
 
-
         </div>
 
     );

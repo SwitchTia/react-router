@@ -18,7 +18,7 @@ header {
 
 main {
   background-color: rgb(249, 219, 226);
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -27,8 +27,9 @@ main {
   margin: 0 auto;
   padding-left: 5px;
   border-radius: 5px;
-  background-color: rgb(206, 196, 245);
+  background-color: rgb(212, 204, 244);
   padding: 30px;
+
 }
 
 .text-center{
@@ -40,11 +41,10 @@ main {
     border-radius: 10px;
     color: white;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .col {
-  width: calc(100% / 4 - 50px / 4);
+  width: calc(100% / 2 - (10px * 1) / 2);
   padding: 10px;
   align-content: end;
 }
@@ -101,4 +101,29 @@ main {
 
 header li {
   list-style: none;
+}
+
+/* responsive mobile first */
+/* tablet */
+@media (min-width: 768px) {
+    
+    .col {
+        width: calc(100% / 4 - (10px * 3) / 4);
+    }
+
+    .card-img {
+        height: 150px; 
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  
+    .col {
+        width: calc(100% / 6 - (10px * 5) / 6)
+    }
+
+    .card-img {
+        height: 180px; 
+    }
 }
