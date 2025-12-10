@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import SingleProduct from "./pages/SingleProduct";
+import NotFound from "./pages/NotFound";
 
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -26,6 +27,7 @@ function App() {
               <Route path="" element={<Products />} />
               <Route path=":id" element={<SingleProduct />} />
             </Route>
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
