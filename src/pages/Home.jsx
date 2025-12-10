@@ -12,7 +12,7 @@ export default function Home() {
                 <div>
                     <h3 className="py-40">
                         Welcome to ShopWithUs, your trusted online destination for quality products and a seamless shopping experience.
-                        Founded with a simple mission — to make online shopping easier, faster, and more enjoyable — NovaCart brings together a curated selection of items from trusted brands and emerging creators around the world.
+                        Founded with a simple mission — to make online shopping easier, faster, and more enjoyable — ShopWithUs brings together a curated selection of items from trusted brands and emerging creators around the world.
                     </h3>
                 </div>
 

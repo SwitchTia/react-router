@@ -3,36 +3,45 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function SingleProduct() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const [product, setProduct] = useState(null);
-  
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const [product, setProduct] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get(`https://fakestoreapi.com/products/${id}`)
-      .then((resp) => {
-        setProduct(resp.data);
-      })
-      .catch((err) => {
-        if (err.status === 404) {
-          navigate("/products");
-        }
-      });
-  }, [id]);
 
-  return (
-    <>
-      {product !== null && (
-        <div>
-            <img className="card-img" src={product.image} alt={product.title} />
+    useEffect(() => {
+        axios
+            .get(`https://fakestoreapi.com/products/${id}`)
+            .then((resp) => {
+                setProduct(resp.data);
+            })
+            .catch((err) => {
+                if (err.status === 404) {
+                    navigate("/products");
+                }
+            });
+    }, [id]);
 
-            <h5 className="py-10">{product.title}</h5>
+    return (
+        <>
+            {product !== null && (
+                <div className="container flex-between">
+                    <div>
+                        <span className="py-30">Category: {product.category}</span>
+                        <hr />
 
-            <span>Price: {product.price}</span>
 
-        </div>
-      )}
-    </>
-  );
+                        <h5 className="py-10">{product.title}</h5>
+                        <p className="py-10">Description: {product.description}</p>
+
+                        <span>Price: {product.price}</span>
+                    </div>
+
+                    <div>
+                        <img src={product.image} alt={product.title} />
+                    </div>
+
+                </div>
+            )}
+        </>
+    );
 }

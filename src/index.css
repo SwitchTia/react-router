@@ -20,6 +20,7 @@ main {
   background-color: rgb(249, 219, 226);
   padding-top: 20px;
   padding-bottom: 40px;
+  
 }
 
 .container {
@@ -41,12 +42,14 @@ main {
     border-radius: 10px;
     color: white;
     text-align: center;
+
 }
 
 .col {
   width: calc(100% / 2 - (10px * 1) / 2);
   padding: 10px;
   align-content: end;
+
 }
 
 .mb-30{
