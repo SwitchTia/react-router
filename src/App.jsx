@@ -4,6 +4,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
+import SingleProduct from "./pages/SingleProduct";
+
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -20,7 +22,10 @@ function App() {
           <Route element={<DefaultLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/products" element={<Products />} />  
+            <Route path="/products">
+              <Route path="" element={<Products />} />
+              <Route path=":id" element={<SingleProduct />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
